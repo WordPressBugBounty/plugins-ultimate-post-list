@@ -1,10 +1,10 @@
 === Ultimate Post List ===
-Contributors: kybernetikservices, Hinjiriyo
+Contributors: kybernetikservices,wpcooltools, Hinjiriyo
 Donate link: https://www.paypal.com/donate?hosted_button_id=NSEQX73VHXKS8
 Tags: authors, avatars, css, featured image, first image, grid, list, options, shortcode, thumbnail, widget, load more
 Requires at least: 4.0
 Requires PHP: 5.2
-Tested up to: 6.6
+Tested up to: 6.9
 Stable tag: 5.2.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -21,7 +21,7 @@ The plugin Ultimate Post List for WordPress gives you an easy-to-use toolbox to 
 
 * as **widgets in every widget area** per drag'n'drop easily
 * via **configurable shortcodes in every post content**
-* via **calls of the function upl_print_list()** in PHP code
+* via **calls of the function upl_get_html()** in PHP code
 
 You can switch between a **vertical list layout** or a **responsive grid layout**. A few options help you to get a nice layout without any need to code.
 
@@ -151,7 +151,7 @@ The free version of Ultimate Post List offers you many options to type and click
 
 = Additional options in the Pro version =
 
-The Pro version has all the options of the free version and many additional options for layouts, numbered lists, colors, custom post types and much more. [Go to Ultimate Post List Pro](https://www.kybernetik-services.com/shop/wordpress/plugin/ultimate-post-list-pro/?utm_source=wordpress_org&utm_medium=plugin&utm_campaign=ultimate-post-list&utm_content=update-notice-readme).
+The Pro version has all the options of the free version and many additional options for layouts, numbered lists, colors, custom post types and much more. [Go to Ultimate Post List Pro](https://www.kybernetik-services.com/plugins/ultimate-post-list-pro/?utm_source=wordpress_org&utm_medium=plugin&utm_campaign=ultimate-post-list&utm_content=update-notice-readme).
 
 Pro users get premium support whilst free support is offered in the WordPress forums in our spare time.
 
@@ -316,7 +316,7 @@ directory
 * Added aria-label to the NAV element for better accessibility
 * Added loading=”lazy” attribute to the default image (introduced in WP 5.5)
 * Revised translations for WP 5.5
-* Fixed wrong sanitazion of checkbox groups
+* Fixed wrong sanitation of checkbox groups
 * Updated translations
 * Tested successfully with WordPress 5.5
 
@@ -391,7 +391,7 @@ directory
 
 = 4.1 =
 * Added option to display the text next to the thumbnail instead of floating around  it
-* Added new function upl_print_list() to call a list in PHP code
+* Added new function upl_get_html() to call a list in PHP code
 * Updated translations
 * Tested successfully with WordPress 4.9.4
 
@@ -542,7 +542,7 @@ Fixed missing list title in the output
 Small revisions, tested with WordPress 5.0.3
 
 = 4.1 =
-Added option for text/image circulation, new function upl_print_list(), tested with WordPress 4.9.4
+Added option for text/image circulation, new function upl_get_html(), tested with WordPress 4.9.4
 
 = 4.0.3 =
 Added greek translation, updated WP 4.9 translations, tested with WordPress 4.9.1
