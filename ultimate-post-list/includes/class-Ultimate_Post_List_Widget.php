@@ -12,12 +12,11 @@ class Ultimate_Post_List_Widget extends WP_Widget {
 
 	function __construct() {
 		$this->plugin_slug				= 'ultimate-post-list';
-		$this->plugin_version			= '5.2.7.1';
+		$this->plugin_version			= '5.2.8';
 		
 		$widget_ops = array( 'classname' => $this->plugin_slug, 'description' => __( 'List of your site&#8217;s posts as configured with Ultimate Post List.', 'ultimate-post-list' ) );
 		parent::__construct( $this->plugin_slug, __( 'Ultimate Post List', 'ultimate-post-list' ), $widget_ops );
 
-		add_action( 'admin_init', array( $this, 'load_plugin_textdomain' ) );
 		add_action( 'save_post', array( $this, 'flush_widget_cache' ) );
 		add_action( 'deleted_post', array( $this, 'flush_widget_cache' ) );
 		add_action( 'switch_theme', array( $this, 'flush_widget_cache' ) );
@@ -170,18 +169,6 @@ class Ultimate_Post_List_Widget extends WP_Widget {
 	 */
 	function flush_widget_cache() {
 		wp_cache_delete( $this->plugin_slug, 'widget' );
-	}
-
-	/**
-	 * Load the plugin text domain for translation.
-	 *
-	 * @since	1.0.0
-	 * @access	public
-	 */
-	public function load_plugin_textdomain() {
-
-		load_plugin_textdomain( 'ultimate-post-list', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-
 	}
 
 }

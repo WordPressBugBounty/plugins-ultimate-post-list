@@ -123,9 +123,6 @@ class Ultimate_Post_List_Admin {
 		$this->nonce_name						= 'upl_23198_nonce';
 		$this->upl_id_key						= 'upl_id';
 		$this->help_page_slug					= 'upl-help-page';
-
-		// not in use, just for the po-editor to display the translation on the plugins overview list
-		$foo = __( 'Make up custom-tailored preview lists of the contents easily and place them in widget areas and post contents.', 'ultimate-post-list' );
 	}
 
 	/**

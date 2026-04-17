@@ -9,15 +9,14 @@
  * Plugin Name:       Ultimate Post List
  * Plugin URI:        http://wordpress.org/plugins/ultimate-post-list/
  * Description:       Make up custom-tailored preview lists of the contents easily and place them in widget areas and post contents.
- * Version:           5.2.7.1
- * Requires at least: 4.0
+ * Version:           5.2.8
+ * Requires at least: 4.6
  * Requires PHP:      5.2
  * Author:            Kybernetik Services
  * Author URI:        https://www.kybernetik-services.com/?utm_source=wordpress_org&utm_medium=plugin&utm_campaign=ultimate-post-list&utm_content=author
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       ultimate-post-list
- * Domain Path:       /languages
  */
 
 // If this file is called directly, abort.
@@ -29,7 +28,7 @@ if ( ! defined( 'WPINC' ) ) {
  * The constants for this plugin
  */
 const UPL_NAME = 'Ultimate Post List';
-const UPL_VERSION = '5.2.7.1';
+const UPL_VERSION = '5.2.8';
 define( 'UPL_ROOT', plugin_dir_path( __FILE__ ) );
 define( 'UPL_URL', plugin_dir_url( __FILE__ ) );
 define( 'UPL_ROOT_FILE', plugin_basename( __FILE__ ) );

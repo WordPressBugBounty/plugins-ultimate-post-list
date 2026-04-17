@@ -1,11 +1,11 @@
 === Ultimate Post List ===
 Contributors: kybernetikservices,wpcooltools, Hinjiriyo
 Donate link: https://www.paypal.com/donate?hosted_button_id=NSEQX73VHXKS8
-Tags: authors, avatars, css, featured image, first image, grid, list, options, shortcode, thumbnail, widget, load more
-Requires at least: 4.0
+Tags: post list, shortcode, widget, featured image, load more
+Requires at least: 4.6
 Requires PHP: 5.2
-Tested up to: 6.9
-Stable tag: 5.2.7.1
+Tested up to: 7.0
+Stable tag: 5.2.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,10 +33,10 @@ The plugin is **multi-widget capable**. That is, you can have several widgets of
 
 You can clone (duplicate, copy) every list with a single click on the action link.
 
-The plugin is available in English, German (Deutsch) and Greek (Ελληνικά). It does not collect any personal data, so it is ready for EU General Data Protection Regulation (GDPR) compliance.
+The plugin does not collect any personal data, so it is ready for EU General Data Protection Regulation (GDPR) compliance.
 
 = Demo =
-You want to test Ultimate Post List before installing on your site? Try it out on your individual and free dummy site and [click here](https://demo.tastewp.com/ultimate-post-list).
+You want to test Ultimate Post List before installing on your site? Try it out on your individual and free WordPress playground and [click here](https://wordpress.org/plugins/ultimate-post-list/?preview=1).
 
 = Options you can set =
 
@@ -268,12 +268,19 @@ directory
 
 == Screenshots ==
 
-1. The edit page of the Ultimate Post List in english language
-2. The widget form of an Ultimate Post List in english language
+1. The edit page of the Ultimate Post List in English language
+2. The widget form of an Ultimate Post List in English language
 3. Examples of Ultimate Post Lists on one page: lists as content and as widgets
 4. Example of an Ultimate Post List widget with avatars of the post authors as thumbnails
 
 == Changelog ==
+
+= 5.2.8 =
+* fixed "_load_textdomain_just_in_time was called incorrectly"
+* removed load_plugin_textdomain()
+* deleted with the plugin shipped language files
+* switched loading language files from [GlotPress](https://translate.wordpress.org/projects/wp-plugins/ultimate-post-list/)
+* bumped required WordPress to 4.6
 
 = 5.2.7.1 =
 * fixed debugging information where it is shown

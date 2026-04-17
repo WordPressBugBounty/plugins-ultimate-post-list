@@ -59,7 +59,6 @@ class Ultimate_Post_List {
 		$this->plugin_version = UPL_VERSION;
 
 		$this->load_dependencies();
-		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
 		
@@ -71,7 +70,6 @@ class Ultimate_Post_List {
 	 * Include the following files that make up the plugin:
 	 *
 	 * - Ultimate_Post_List_Loader. Orchestrates the hooks of the plugin.
-	 * - Ultimate_Post_List_i18n. Defines internationalization functionality.
 	 * - Ultimate_Post_List_Admin. Defines all hooks for the admin area.
 	 * - Ultimate_Post_List_Public. Defines all hooks for the public side of the site.
 	 *
@@ -100,25 +98,7 @@ class Ultimate_Post_List {
 	}
 
 	/**
-	 * Define the locale for this plugin for internationalization.
-	 *
-	 * Uses the Ultimate_Post_List_i18n class in order to set the domain and to register the hook
-	 * with WordPress.
-	 *
-	 * @since    1.0.0
-	 * @access   private
-	 */
-	private function set_locale() {
-
-		$plugin_i18n = new Ultimate_Post_List_i18n();
-		#$plugin_i18n->set_domain( $this->get_plugin_slug() );
-
-		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
-
-	}
-
-	/**
-	 * Register all of the hooks related to the admin area functionality
+	 * Register all the hooks related to the admin area functionality
 	 * of the plugin.
 	 *
 	 * @since    1.0.0
@@ -182,7 +162,7 @@ class Ultimate_Post_List {
 	}
 
 	/**
-	 * Register all of the hooks related to the public-facing functionality
+	 * Register all the hooks related to the public-facing functionality
 	 * of the plugin.
 	 *
 	 * @since    1.0.0
@@ -203,7 +183,7 @@ class Ultimate_Post_List {
 	}
 
 	/**
-	 * Run the loader to execute all of the hooks with WordPress.
+	 * Run the loader to execute all the hooks with WordPress.
 	 *
 	 * @since    1.0.0
 	 */
@@ -231,16 +211,6 @@ class Ultimate_Post_List {
 	 */
 	public function get_plugin_slug() {
 		return $this->plugin_slug;
-	}
-
-	/**
-	 * The reference to the class that orchestrates the hooks with the plugin.
-	 *
-	 * @since     1.0.0
-	 * @return    Ultimate_Post_List_Loader    Orchestrates the hooks of the plugin.
-	 */
-	public function get_loader() {
-		return $this->loader;
 	}
 
 	/**
