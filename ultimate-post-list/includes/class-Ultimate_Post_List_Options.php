@@ -301,7 +301,7 @@ class Ultimate_Post_List_Options {
 				'title' => __( 'Post List Item Options', 'ultimate-post-list'),
 				'post_data_order' => array(
 					'headline' => __( 'Post Data Order', 'ultimate-post-list' ),
-					'description' => __( 'Select a number to set the position of each post information. The higher the number the lower the position. If a number is used multiple times the result is not predictable. So use each number only once. Post informations which are set not to be shown will be ingored.', 'ultimate-post-list' ),
+					'description' => __( 'Select a number to set the position of each post information. The higher the number the lower the position. If a number is used multiple times the result is not predictable. So use each number only once. Post information which are set not to be shown will be ignored.', 'ultimate-post-list' ),
 					'options' => self::get_position_options( $positions ),
 				), // end post_data_order
 				'post_display_options' => array(

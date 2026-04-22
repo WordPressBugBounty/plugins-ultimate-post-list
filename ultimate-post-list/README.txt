@@ -5,7 +5,7 @@ Tags: post list, shortcode, widget, featured image, load more
 Requires at least: 4.6
 Requires PHP: 5.2
 Tested up to: 7.0
-Stable tag: 5.2.8
+Stable tag: 5.2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -274,6 +274,10 @@ directory
 4. Example of an Ultimate Post List widget with avatars of the post authors as thumbnails
 
 == Changelog ==
+= 5.2.9 =
+* added reading plugin version from plugin header
+* code improvements
+* fixed several typos
 
 = 5.2.8 =
 * fixed "_load_textdomain_just_in_time was called incorrectly"

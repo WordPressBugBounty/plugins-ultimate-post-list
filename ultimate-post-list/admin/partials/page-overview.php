@@ -96,7 +96,7 @@ if ( current_user_can( 'import' ) ) {
 				<h3><?php esc_html_e( 'How to use the shortcode', 'ultimate-post-list' ); ?></h3>
 				<div id="screenshot-shortcode-box"><img src="<?php echo $image_root_url; ?>screenshot-shortcode-box.gif" alt="<?php esc_attr_e( 'Screenshot of the Shortcode box', 'ultimate-post-list' ); ?>" width="283" height="118"><br><em><?php esc_html_e( 'Screenshot of the Shortcode box', 'ultimate-post-list'); ?></em></div>
 				<p><?php esc_html_e( 'Copy the shortcode in the Shortcode box and insert it at the desired place in the content.', 'ultimate-post-list' ); ?></p>
-				<p><?php esc_html_e( 'You can find the shortcode both in the table list of all post lists and in the Shortcode column and in the Shortcode box on the edit page of each list in the Shortcode box.', 'ultimate-post-list' ); ?></p>
+				<p><?php esc_html_e( 'The shortcode can be found both in the table list of all post lists and in the "Shortcode" column as well as in the shortcode field on the edit page of each list.', 'ultimate-post-list' ); ?></p>
 				<p><?php esc_html_e( 'You can add some attributes to overwrite the respective settings of the list.', 'ultimate-post-list' ); ?></p>
 				<dl class="atts-list">
 					<dt>list_title</dt>

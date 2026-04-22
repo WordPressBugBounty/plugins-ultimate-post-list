@@ -8,12 +8,10 @@
 class Ultimate_Post_List_Widget extends WP_Widget {
 
 	private $plugin_slug;  // identifier of this plugin for WP
-	private $plugin_version; // number of current plugin version
 
 	function __construct() {
 		$this->plugin_slug				= 'ultimate-post-list';
-		$this->plugin_version			= '5.2.8';
-		
+
 		$widget_ops = array( 'classname' => $this->plugin_slug, 'description' => __( 'List of your site&#8217;s posts as configured with Ultimate Post List.', 'ultimate-post-list' ) );
 		parent::__construct( $this->plugin_slug, __( 'Ultimate Post List', 'ultimate-post-list' ), $widget_ops );
 
