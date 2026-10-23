@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/donate?hosted_button_id=NSEQX73VHXKS8
 Tags: post list, shortcode, widget, featured image, load more
 Requires at least: 4.6
 Requires PHP: 5.2
-Tested up to: 7.0
+Tested up to: 7.1
 Stable tag: 5.2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -619,4 +619,4 @@ Fixed errors on the edit page, tested with WP 4.5.2
 Shortened readme.txt
 
 = 1.0.0 =
-Initial release.
+Initial release
